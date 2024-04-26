@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "K2D", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: rgb(225, 242, 245);
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+  grid-template-rows: 5rem 2fr 6rem;
+  grid-template-areas:
+    "header header"
+    "aside  main"
+    "footer footer";
+}
+
+.grid-container_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(15, 15, 61);
+  width: 100%;
+  grid-area: header;
+}
+
+.navbar-nav {
+  margin-right: 28px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 18px;
+}
+
+.nav-link :hover {
+  color: gray;
+}
+
+.titulo {
+  display: flex;
+  gap: 12px;
+}
+
+h1 {
+  font-family: "K2D", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 35px;
+  color: aliceblue;
+  margin-left: 28px;
+}
+
+.img-logo {
+  height: 60px;
+  width: 60px;
+}
+
+.buscador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  position: relative;
+}
+
+.nav-button {
+  background-color: blueviolet;
+  padding: 10px 15px;
+  position: absolute;
+  border: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+  width: 40px;
+}
+
+input {
+  width: 350px;
+  padding: 10px;
+  padding-right: 35px;
+  border-radius: 5px 0 0 5px;
+  border: 0;
+  outline: none;
+  font-size: 1rem;
+}
+
+.categorias {
+  margin-top: 12px;
+  margin-left: 23px;
+  display: flex;
+  flex-direction: column;
+  grid-area: aside;
+}
+
+h2 {
+  padding-bottom: 12px;
+}
+
+.categorias ul {
+  list-style: none;
+}
+
+span {
+  color: gray;
+}
+
+li {
+  padding-bottom: 6px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+li :hover {
+  background-color: lightblue;
+}
+
+.container_productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, fr);
+  row-gap: 35px;
+  column-gap: 15px;
+  margin-top: 12px;
+  margin-right: 12px;
+  grid-area: main;
+}
+
+.caja {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.caja img {
+  height: 300px;
+  width: 360px;
+  margin-bottom: 13px;
+}
+
+h4 {
+  font-size: 20px;
+  padding-bottom: 12px;
+}
+
+.boton {
+  width: 100%;
+  height: 40px;
+}
+button {
+  background-color: rgb(43, 43, 71);
+  width: 100%;
+  height: 40px;
+  padding: 35xpx;
+  margin-top: 19px;
+  cursor: pointer;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.boton :hover {
+  background-color: blueviolet;
+  width: 100%;
+}
+
+footer {
+  background-color: rgb(33, 33, 61);
+  margin-top: 40px;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  grid-area: footer;
+}
